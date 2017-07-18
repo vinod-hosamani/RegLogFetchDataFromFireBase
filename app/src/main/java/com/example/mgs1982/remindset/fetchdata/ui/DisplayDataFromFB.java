@@ -25,7 +25,7 @@ public class DisplayDataFromFB extends AppCompatActivity implements DisplayDataF
     protected void onCreate(@Nullable Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_homescreen);
+        setContentView(R.layout.activity_display_datafromfb);
         initView();
 
         presenterInterface.getFBData();
