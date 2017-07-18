@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "932491953001",
+    "firebase_url": "https://mindgate-38478.firebaseio.com",
+    "project_id": "mindgate-38478",
+    "storage_bucket": "mindgate-38478.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:932491953001:android:de1c8a5cff0e56ba",
+        "android_client_info": {
+          "package_name": "com.example.mgs1982.remindset"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "932491953001-a4st286e2ukn2h5o2g260mioq9i2aquo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAhw-IwskAIan9xwwsmcf-RGdE2ZR6S6w4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
