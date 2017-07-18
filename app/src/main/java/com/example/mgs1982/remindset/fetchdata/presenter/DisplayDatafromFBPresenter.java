@@ -1,8 +1,9 @@
-package com.example.mgs1982.remindset.fetchdata.interactor;
+package com.example.mgs1982.remindset.fetchdata.presenter;
 
 import android.content.Context;
 
-import com.example.mgs1982.remindset.fetchdata.presenter.DislpayDatafromFBInteractorInterface;
+import com.example.mgs1982.remindset.fetchdata.interactor.DislpayDatafromFBInteractorInterface;
+import com.example.mgs1982.remindset.fetchdata.interactor.DisplayDatafromFBInteractor;
 import com.example.mgs1982.remindset.fetchdata.presenter.DisplayDataFromFBPresenterInterface;
 import com.example.mgs1982.remindset.fetchdata.ui.DisplayDataFromFBView;
 import com.example.mgs1982.remindset.registration.model.UserModel;

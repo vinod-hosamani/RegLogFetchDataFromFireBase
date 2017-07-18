@@ -3,7 +3,6 @@ package com.example.mgs1982.remindset.fetchdata.interactor;
 import android.content.Context;
 
 import com.example.mgs1982.remindset.R;
-import com.example.mgs1982.remindset.fetchdata.presenter.DislpayDatafromFBInteractorInterface;
 import com.example.mgs1982.remindset.fetchdata.presenter.DisplayDataFromFBPresenterInterface;
 import com.example.mgs1982.remindset.constant.Constant;
 import com.example.mgs1982.remindset.registration.model.UserModel;

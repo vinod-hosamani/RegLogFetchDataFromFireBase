@@ -8,7 +8,7 @@ import android.support.v7.widget.StaggeredGridLayoutManager;
 
 import com.example.mgs1982.remindset.R;
 import com.example.mgs1982.remindset.fetchdata.presenter.DisplayDataFromFBPresenterInterface;
-import com.example.mgs1982.remindset.fetchdata.interactor.DisplayDatafromFBPresenter;
+import com.example.mgs1982.remindset.fetchdata.presenter.DisplayDatafromFBPresenter;
 import com.example.mgs1982.remindset.fetchdata.modelAdapter.ItemAdapter;
 import com.example.mgs1982.remindset.registration.model.UserModel;
 
