@@ -34,10 +34,9 @@ public class ItemAdapter extends  RecyclerView.Adapter<ItemAdapter.TaskViewHolde
         userModelList = new ArrayList<>();
     }
     @Override
-    public TaskViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-        View view = LayoutInflater.from(parent.getContext()).
-                inflate(R.layout.recycler_todo_item_list, parent, false);
-
+    public TaskViewHolder onCreateViewHolder(ViewGroup parent, int viewType)
+    {
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.recycler_user_data_list, parent, false);
         return new TaskViewHolder(view);
     }
     @Override

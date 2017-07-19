@@ -48,6 +48,7 @@ public class RegistrationInteractor implements  RegistrationInteractorInterface
                 {
                     if(task.isSuccessful())
                     {
+
                         userId=task.getResult().getUser().getUid();
                         model.setId(userId);
                         databaseReference.child(userId).setValue(model);

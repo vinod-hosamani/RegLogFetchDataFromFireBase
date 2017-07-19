@@ -12,5 +12,4 @@ public interface DisplayDataFromFBView
 {
     void displaySuccess(List<UserModel> userModelList);
     void displayFailure(String message);
-
 }

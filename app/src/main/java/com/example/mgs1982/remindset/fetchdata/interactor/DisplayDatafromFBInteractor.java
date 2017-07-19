@@ -20,16 +20,20 @@ import java.util.List;
  * Created by MGS1982 on 7/18/2017.
  */
 
-public class DisplayDatafromFBInteractor implements DislpayDatafromFBInteractorInterface {
-
+public class DisplayDatafromFBInteractor implements DislpayDatafromFBInteractorInterface
+{
     Context context;
     DisplayDataFromFBPresenterInterface presenterInterface;
 
     DatabaseReference databaseReference;
 
-    public DisplayDatafromFBInteractor(Context context, DisplayDataFromFBPresenterInterface presenterInterface) {
+    List<UserModel> userModelList;
+    public DisplayDatafromFBInteractor(Context context, DisplayDataFromFBPresenterInterface presenterInterface)
+    {
         this.context = context;
         this.presenterInterface = presenterInterface;
+
+       // databaseReference = FirebaseDatabase.getInstance().getReference(Constant.key_firebase_user).child("lochan").child("test");
 
         databaseReference = FirebaseDatabase.getInstance().getReference(Constant.key_firebase_user);
     }
@@ -41,19 +45,18 @@ public class DisplayDatafromFBInteractor implements DislpayDatafromFBInteractorI
         {
             databaseReference.addValueEventListener(new ValueEventListener()
             {
-                List<UserModel> userModelList = new ArrayList<UserModel>();
+               // List<UserModel> userModelList = new ArrayList<UserModel>();
                 @Override
                 public void onDataChange(DataSnapshot dataSnapshot)
                 {
+                    userModelList=new ArrayList<UserModel>();
                     for (DataSnapshot dataSnapshot1 :dataSnapshot.getChildren())
                     {
                         UserModel model = dataSnapshot1.getValue(UserModel.class);
                         userModelList.add(model);
                     }
-
                     presenterInterface.getDataSuccess(userModelList);
                 }
-
                 @Override
                 public void onCancelled(DatabaseError databaseError)
                 {
